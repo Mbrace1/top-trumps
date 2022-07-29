@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Trumps</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Top Trumps</h1>
+    <p>Select the attribute you think will beat the opponent, and click compare cards to see your result, then click next to carry on. The first person to hold all 30 cards wins the game.</p>
+    <div class="container">
+        <div id="player-card" class="card">
+            <h2>George Washington</h2>
+            <img src="" alt="">
+            <table id="player-card-stats">
+                <tr class="card-stat">
+                    <td><span class="option">lifespan</span>:</td>
+                    <td><span class="lifespan">59</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">speed</span>:</td>
+                    <td><span class="speed">71</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">strength</span>:</td>
+                    <td><span class="strength">23</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">size</span>:</td>
+                    <td><span class="size">98</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">intelligence</span>:</td>
+                    <td><span class="intelligence">23</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">cuteness</span>:</td>
+                    <td><span class="cuteness">23</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">weight</span>:</td>
+                    <td><span class="weight">23</span></td>
+                </tr>
+                <tr class="card-stat">
+                    <td><span class="option">aggression</span>:</td>
+                    <td><span class="aggression">23</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="btns">
+            <button type="button" class="btn" id="compare-cards">Compare cards</button>
+            <button type="button" class="btn disabled" id="next-cards">Next card</button>
+        </div>
+        <div id="computer-card" class="card hide-card">
+            <h2>George Washington</h2>
+            <img src="" alt="">
+            <table id="computer-card-stats">
+                <tr class="computer-card-stat">
+                    <td><span class="option">lifespan</span>:</td>
+                    <td><span class="lifespan">59</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">speed</span>:</td>
+                    <td><span class="speed">71</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">strength</span>:</td>
+                    <td><span class="strength">23</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">size</span>:</td>
+                    <td><span class="size">98</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">intelligence</span>:</td>
+                    <td><span class="intelligence">23</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">cuteness</span>:</td>
+                    <td><span class="cuteness">23</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">weight</span>:</td>
+                    <td><span class="weight">23</span></td>
+                </tr>
+                <tr class="computer-card-stat">
+                    <td><span class="option">aggression</span>:</td>
+                    <td><span class="aggression">23</span></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <h2>You have <span id="player-card-number">15</span> cards</h2>
+        <h2>Middle stack: <span id="middle-stack-number">0</span> cards</h2>
+        <h2>They have <span id="computer-card-number">15</span> cards</h2>
+    </div>
+    <!-- <div class="container">
+        <button id="compare-cards">Compare cards</button>
+    </div> -->
+    <script src="index.js"></script>
+</body>
+</html>
